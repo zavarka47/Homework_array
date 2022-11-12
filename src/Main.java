@@ -17,8 +17,8 @@ public class Main {
         System.out.println(Arrays.toString(monthExpenditureArr));
 
         int sumExpenditure = 0;
-        for (int i = 0; i < monthExpenditureArr.length; i++) {
-            sumExpenditure = sumExpenditure + monthExpenditureArr[i];
+        for (int k : monthExpenditureArr) {
+            sumExpenditure = sumExpenditure + k;
         }
         System.out.println("«Сумма трат за месяц составила " + sumExpenditure + " рублей»\n");
 
@@ -34,12 +34,12 @@ public class Main {
 
         int maxExpenditure = monthExpenditureArr [0];
         int minExpenditure = monthExpenditureArr [0];
-        for (int i = 0; i < monthExpenditureArr.length; i++) {
-            if (maxExpenditure > monthExpenditureArr[i]) {
-                maxExpenditure = monthExpenditureArr[i];
+        for (int j : monthExpenditureArr) {
+            if (maxExpenditure > j) {
+                maxExpenditure = j;
             }
-            if (minExpenditure < monthExpenditureArr [i]) {
-                minExpenditure = monthExpenditureArr [i];
+            if (minExpenditure < j) {
+                minExpenditure = j;
             }
         }
         System.out.println("Максимальная сумма трат за день составила " + maxExpenditure + " рублей");
